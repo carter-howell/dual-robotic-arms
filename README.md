@@ -2,13 +2,13 @@
 
 Status: Prototype robotics project
 
-This project is a dual robotic arm system controlled by an Xbox controller through an ESP32, Bluepad32, and PCA9685 PWM servo drivers. It demonstrates embedded control, servo calibration, Bluetooth input mapping, mechanical assembly, and practical debugging of a high-servo-count system.
+I built this dual robotic arm system to control two 3D-printed arms with an Xbox controller through an ESP32, Bluepad32, and PCA9685 PWM servo drivers. It demonstrates embedded control, servo calibration, Bluetooth input mapping, mechanical assembly, and practical debugging of a high-servo-count system.
 
 ![Dual robotic arms](media/MainPhoto.jpeg)
 
 ## Overview
 
-The project explored coordinated control of two 3D-printed robotic arms using a game controller. The system maps controller inputs to multiple servo axes so the arms can rotate, extend, grip, and move through calibrated ranges.
+I used this project to explore coordinated control of two 3D-printed robotic arms with a game controller. The system maps controller inputs to multiple servo axes so the arms can rotate, extend, grip, and move through calibrated ranges.
 
 ## System Architecture
 
@@ -22,9 +22,9 @@ The project explored coordinated control of two 3D-printed robotic arms using a 
 
 ## Controls And Firmware
 
-The firmware was written in C++ using the Arduino IDE. Bluepad32 handles controller pairing and input. The Adafruit PWM servo driver library sends servo commands through the PCA9685 boards.
+I wrote the firmware in C++ using the Arduino IDE. Bluepad32 handles controller pairing and input. The Adafruit PWM servo driver library sends servo commands through the PCA9685 boards.
 
-The control logic includes servo min/max calibration, serial debugging, and controller mappings for claws, rotation, extension, and axis selection.
+I built the control logic around servo min/max calibration, serial debugging, and controller mappings for claws, rotation, extension, and axis selection.
 
 Documented control behavior includes:
 
@@ -34,13 +34,13 @@ Documented control behavior includes:
 
 ## Mechanical Build
 
-The team compared arm designs, selected a larger dual-arm configuration, printed the parts at the makerspace, and assembled the arms with bearings, fasteners, servos, and wire extensions.
+My team compared arm designs, selected a larger dual-arm configuration, printed the parts at the makerspace, and assembled the arms with bearings, fasteners, servos, and wire extensions.
 
 ![Side view of robotic arm](media/SidePhotoOfArm.jpg)
 
 ## Testing Status
 
-Both arms responded to Bluetooth controller input and demonstrated gripping, lifting, and multi-joint movement. During testing, servo ranges and controller behavior were adjusted to reduce binding and make motion more predictable.
+Both arms responded to Bluetooth controller input and demonstrated gripping, lifting, and multi-joint movement. During testing, I adjusted servo ranges and controller behavior to reduce binding and make motion more predictable.
 
 More complete documentation should eventually add the firmware source, full pin/channel map, servo limits, power wiring, measured current draw, and a demo video.
 
