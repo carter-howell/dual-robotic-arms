@@ -10,7 +10,7 @@ I built this dual robotic arm system to control two 3D-printed arms with an Xbox
 
 I used this project to explore coordinated control of two 3D-printed robotic arms with a game controller. The system maps controller inputs to multiple servo axes so the arms can rotate, extend, grip, and move through calibrated ranges.
 
-## System Architecture
+## Main Parts
 
 - Controller: ESP32
 - Input: Xbox controller over Bluetooth
@@ -38,14 +38,14 @@ My team compared arm designs, selected a larger dual-arm configuration, printed 
 
 ![Side view of robotic arm](media/SidePhotoOfArm.jpg)
 
-## Testing Status
+## Testing
 
 The completed system operated through Bluetooth controller input and demonstrated gripping, lifting, and multi-joint movement with both arms. During testing, I adjusted servo ranges and controller behavior to reduce binding and make motion more predictable.
 
 ## Project Work
 
 - ESP32 Bluetooth control
-- Bluepad32 controller integration
+- Xbox controller input through Bluepad32
 - PCA9685 PWM servo driving
 - Multi-servo calibration and motion mapping
 - 3D-printed robotics assembly
@@ -54,7 +54,7 @@ The completed system operated through Bluetooth controller input and demonstrate
 ## Still To Document
 
 - Add firmware source and channel mapping.
-- Add power architecture and servo rail notes.
+- Add a power-wiring diagram and servo-supply notes.
 - Add measured current draw under load.
 - Add photos of the controller/electronics wiring.
 - Add demo media showing movement and controller mapping.
