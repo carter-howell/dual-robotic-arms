@@ -2,7 +2,7 @@
 
 Status: Completed and working robotics project
 
-I built this dual robotic arm system to control two 3D-printed arms with an Xbox controller through an ESP32, Bluepad32, and PCA9685 PWM servo drivers. It demonstrates embedded control, servo calibration, Bluetooth input mapping, mechanical assembly, and practical debugging of a high-servo-count system.
+I built this dual robotic arm system to control two 3D-printed arms with an Xbox controller through an ESP32, Bluepad32, and PCA9685 PWM servo drivers. The build involved servo calibration, Bluetooth input mapping, mechanical assembly, and debugging a high-servo-count system.
 
 ![Dual robotic arms](media/MainPhoto.jpeg)
 
@@ -42,9 +42,7 @@ My team compared arm designs, selected a larger dual-arm configuration, printed 
 
 The completed system operated through Bluetooth controller input and demonstrated gripping, lifting, and multi-joint movement with both arms. During testing, I adjusted servo ranges and controller behavior to reduce binding and make motion more predictable.
 
-More complete documentation should eventually add the firmware source, full pin/channel map, servo limits, power wiring, measured current draw, and a demo video.
-
-## What This Demonstrates
+## Project Work
 
 - ESP32 Bluetooth control
 - Bluepad32 controller integration
@@ -53,7 +51,7 @@ More complete documentation should eventually add the firmware source, full pin/
 - 3D-printed robotics assembly
 - Practical mechanical/electrical debugging
 
-## Documentation Improvements
+## Still To Document
 
 - Add firmware source and channel mapping.
 - Add power architecture and servo rail notes.
